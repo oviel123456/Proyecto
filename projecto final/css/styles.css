@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4a90e2, #c0c0c0, #fada5e);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Agregamos posición relativa al body */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+}
+
+#content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alineamos el contenido del wrapper */
+}
+
+/* Estilos específicos para el formulario de contacto */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none; /* Eliminar el borde de los campos de texto */
+    border-bottom: 1px solid #333; /* Agregar una línea inferior como estilo de borde */
+    background-color: transparent; /* Fondo transparente */
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Estilos específicos para los textos de "Libros" y "Autores" */
+section h2 {
+    color: #666; /* Cambiar el color del texto a gris */
+}
+
+/* Animación de fade-in */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
